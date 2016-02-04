@@ -25,7 +25,7 @@ app.get('*', function(request, result) {
   result.sendFile(path.join(__dirname + '/public/sindex.html'));
 });
 
-//specifies port and tells the express object to listen 
+//specifies port and tells the express object to listen
 var PORT = process.env.PORT || 3000;
 app.listen(PORT);
 console.log('Your app listening port ' + PORT);
