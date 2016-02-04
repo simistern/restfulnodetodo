@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+<body>
+<h1> THIS IS A TEST </h1>
+
+
+
+
+
+<script>
+  console.log('Site has loaded congratulations Google wants to make an offer');
+</script>
+
+<div id="app" ng-app="todolist" ng-controller="controller">
+    <h1>{{title}}</h1>
+    <ul>
+      <li ng-repeat="item in items">{{item}}</li>
+    </ul>
+    <input type="text" placeholder="add a pies..." ng-model="todoInput"/>
+    <button ng-click="addTodo()"> Add a item </button>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"> </script>
+<script src="./scripts/tablefill.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</body>
+
+</html>
