@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "body-parser": "^1.14.2",
     "express": "^4.13.4",
     "rethink-config": "^0.2.0",
     "rethinkdbdash": "^2.2.17"

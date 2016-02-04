@@ -7,10 +7,11 @@
 
   <table id="twittable" class="pure-table">
   <th>Company name</th><th> Posting</th><th>Time </th>
-  <tr ng-repeat="x in tweetfields"><td>{{x.user.name}}</td><td>{{x.text}}</td><td>{{x.created_at}}</td></tr>
+  <tr ng-repeat="tweet in items"><td>{{tweet.company}}</td><td>{{tweet.tweet}}</td><td>{{tweet.date}}</td></tr>
   </table>
 
-  <input type="text" placeholder="add a pies..." ng-model="todoInput"/>
+  <input type="text" placeholder="add a company name..." ng-model="inputCompany"/>
+  <input type="text" placeholder="add a tweet..." ng-model="inputTweet"/>
   <button ng-click="addTodo()"> Add a item </button>
 
 </div>
