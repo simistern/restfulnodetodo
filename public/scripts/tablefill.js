@@ -2,20 +2,25 @@ var app = angular.module("todolist", []);
 
 app.controller("controller", ["$scope", "$http", function($scope, $http){
   $scope.title = "My todo list";
-  $scope.smalllist = "Hello";
+  //$scope.smalllist = "Hello";
   $scope.items = [
     "Pork chops",
     "muffins",
     "beer"
   ]
+  $scope.twitterers = [];
 
   $http({
     "method": "GET",
     "url": "./dataset/tabledata.json"
   }).then(function(res) {
-    console.log(res);
+    //console.log("Here is the response data " + JSON.stringify(res.data));
+    $scope.tweetfields = res.data;
+    /*res.data.map(function(tweetfields) {
+      $scope.twitterers.push(tweetfields.created_at);
+    })*/
     res.data.map(function(item) {
-      $scope.items.push(item.text);
+      $scope.items.push(item.created_at);
     })
   })
 
