@@ -1,7 +1,7 @@
 var app = angular.module("todolist", []);
 
 app.controller("controller", ["$scope", "$http", function($scope, $http){
-  $scope.title = "My todo list";
+  //$scope.title = "My todo list";
   //$scope.smalllist = "Hello";
   $scope.items = []
   $scope.twitterers = [];

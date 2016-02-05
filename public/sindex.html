@@ -4,29 +4,16 @@
 <h1 align="center"> Lets make finding a job fun </h1>
 
 <div id="app" ng-app="todolist" ng-controller="controller">
-
   <table id="twittable" class="pure-table">
   <th>Company name</th><th> Posting</th><th>Time </th>
   <tr ng-repeat="tweet in items"><td>{{tweet.company}}</td><td>{{tweet.tweet}}</td><td>{{tweet.date}}</td></tr>
   </table>
-
   <input type="text" placeholder="add a company name..." ng-model="inputCompany"/>
-  <input type="text" placeholder="add a tweet..." ng-model="inputTweet"/>
-  <button ng-click="addTodo()"> Add a item </button>
-
+  <input type="text" placeholder="add a starbcuks card..." ng-model="inputTweet"/>
+  <button ng-click="addItem()"> Add a item </button>
 </div>
 
-
 <script>
-
-//to do list code in case its needed for anything later
-/*
-<h1>{{title}}</h1>
-<ul>
-  <li ng-repeat="item in items">{{item}}</li>
-</ul>
-*/
-
 //logs that the site has loaded and that javascript is working
   console.log('Site has loaded congratulations Google wants to make an offer');
 </script>
@@ -35,7 +22,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"> </script>
 <script src="./scripts/tablefill.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js">
+//to do list code in case its needed for anything later
+/*
+<h1>{{title}}</h1>
+<ul>
+  <li ng-repeat="item in items">{{item}}</li>
+</ul>
+*/
+</script>
 
 </body>
 
